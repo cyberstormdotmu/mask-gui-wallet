@@ -81,16 +81,16 @@ int main(int argc, char *argv[])
 //#endif
 
     // Log settings
-    Monero::Wallet::init(argv[0], "maze-wallet-gui");
+    Monero::Wallet::init(argv[0], "mask-wallet-gui");
 //    qInstallMessageHandler(messageHandler);
 
     MainApp app(argc, argv);
 
     qDebug() << "app startd";
 
-    app.setApplicationName("maze-gui");
-    app.setOrganizationDomain("mazecurrency.org");
-    app.setOrganizationName("maze-project");
+    app.setApplicationName("mask-gui");
+    app.setOrganizationDomain("maskcurrency.org");
+    app.setOrganizationName("mask-project");
 
     #if defined(Q_OS_LINUX) && !defined(Q_OS_ANDROID)
     app.setWindowIcon(QIcon(":/images/appicon.ico"));
@@ -238,7 +238,7 @@ int main(int argc, char *argv[])
 
 
     if (!moneroAccountsRootDir.empty()) {
-        QString moneroAccountsDir = moneroAccountsRootDir.at(0) + "/Maze/wallets";
+        QString moneroAccountsDir = moneroAccountsRootDir.at(0) + "/Mask/wallets";
         engine.rootContext()->setContextProperty("moneroAccountsDir", moneroAccountsDir);
     }
 
@@ -249,7 +249,7 @@ int main(int argc, char *argv[])
         accountName = qgetenv("USERNAME"); // Windows
     }
     if (accountName.isEmpty()) {
-        accountName = "My maze Account";
+        accountName = "My mask Account";
     }
 
     engine.rootContext()->setContextProperty("defaultAccountName", accountName);

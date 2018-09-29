@@ -629,7 +629,7 @@ Rectangle {
             id: guiMoneroVersion
             Layout.fillWidth: true
             font.pixelSize: 14
-            text: qsTr("Embedded Maze version: ") + Version.GUI_MONERO_VERSION + translationManager.emptyString
+            text: qsTr("Embedded Mask version: ") + Version.GUI_MONERO_VERSION + translationManager.emptyString
         }
         TextBlock {
             id: restoreHeightText

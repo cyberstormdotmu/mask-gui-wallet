@@ -455,7 +455,7 @@ OTHER_FILES += \
 
 DISTFILES += \
     notes.txt \
-    maze/src/wallet/CMakeLists.txt \
+    mask/src/wallet/CMakeLists.txt \
     components/MobileHeader.qml
 
 

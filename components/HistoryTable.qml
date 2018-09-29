@@ -173,7 +173,7 @@ ListView {
                         _amount = (_amount *1);
                     }
 
-                    return _amount + " MAZE";
+                    return _amount + " MASK";
                 }
                 color: isOut ? "white" : "#2eb358"
             }
@@ -311,7 +311,7 @@ ListView {
                     if(!isOut && !fee){
                         return "-";
                     } else if(isOut && fee){
-                        return fee + " MAZE";
+                        return fee + " MASK";
                     } else {
                         return "Unknown"
                     }

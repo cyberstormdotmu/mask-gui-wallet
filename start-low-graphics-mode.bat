@@ -2,4 +2,4 @@
 
 set QMLSCENE_DEVICE=softwarecontext
 
-start /b maze-wallet-gui.exe
+start /b mask-wallet-gui.exe

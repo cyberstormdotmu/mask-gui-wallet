@@ -90,7 +90,7 @@ Item {
         wrapMode: Text.Wrap
         //renderType: Text.NativeRendering
         color: "#3F3F3F"
-        text: qsTr("Maze development is solely supported by donations") + translationManager.emptyString
+        text: qsTr("Mask development is solely supported by donations") + translationManager.emptyString
     }
 
     Column {
@@ -160,8 +160,8 @@ Item {
             color: "#4A4646"
             wrapMode: Text.Wrap
             text: qsTr("For every transaction, a small transaction fee is charged. This option lets you add an additional amount, " +
-                       "as a percentage of that fee, to your transaction to support Maze development. For instance, a 50% " +
-                       "autodonation take a transaction fee of 0.005 MAZE and add a 0.0025 MAZE to support Maze development.")
+                       "as a percentage of that fee, to your transaction to support Mask development. For instance, a 50% " +
+                       "autodonation take a transaction fee of 0.005 MASK and add a 0.0025 MASK to support Mask development.")
                     + translationManager.emptyString
         }
         Column {
@@ -187,8 +187,8 @@ Item {
                 font.pixelSize: 15
                 color: "#4A4646"
                 wrapMode: Text.Wrap
-                text: qsTr("Mining secures the Maze network, and also pays a small reward for the work done. This option " +
-                           "will let Maze mine when your computer is on mains power and is idle. It will stop mining when you continue working.")
+                text: qsTr("Mining secures the Mask network, and also pays a small reward for the work done. This option " +
+                           "will let Mask mine when your computer is on mains power and is idle. It will stop mining when you continue working.")
                       + translationManager.emptyString
             }
         }

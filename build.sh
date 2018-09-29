@@ -64,7 +64,7 @@ source ./utils.sh
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 MONERO_DIR=monero
-MONEROD_EXEC=mazed
+MONEROD_EXEC=maskd
 
 MAKE='make'
 if [[ $platform == *bsd* ]]; then
@@ -91,9 +91,9 @@ if [ "$ANDROID" != true ] && ([ "$platform" == "linux32" ] || [ "$platform" == "
 fi
 
 if [ "$platform" == "darwin" ]; then
-    BIN_PATH=$BIN_PATH/maze-wallet-gui.app/Contents/MacOS/
+    BIN_PATH=$BIN_PATH/mask-wallet-gui.app/Contents/MacOS/
 elif [ "$platform" == "mingw64" ] || [ "$platform" == "mingw32" ]; then
-    MONEROD_EXEC=mazed.exe
+    MONEROD_EXEC=maskd.exe
 fi
 
 # force version update
@@ -109,7 +109,7 @@ if ! QMAKE=$(find_command qmake qmake-qt5); then
     echo "Failed to find suitable qmake command."
     exit 1
 fi
-$QMAKE ../maze-wallet-gui.pro "$CONFIG" || exit
+$QMAKE ../mask-wallet-gui.pro "$CONFIG" || exit
 $MAKE || exit
 
 # Copy monerod to bin folder
